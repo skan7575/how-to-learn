@@ -141,7 +141,7 @@
   margin-bottom: 20px;
 }
 .section-title_theme_dark {
-  color: white ;
+  color: white;
   padding-top: 90px;
 }
 .section-subtitle {
@@ -180,12 +180,8 @@
   width: 250px;
   margin-top: 60px;
 }
-.table__cell_theme_dark {
-  width: 200px;
-}
 .table__text_space {
   margin-top: 20px;
-
 }
 /*feynman*/
 .feynman {
@@ -195,7 +191,7 @@
   align-items: center;
   background-image: url(/images/feynman.png);
   background-position: left bottom;
-  background-size:867px 637px ;
+  background-size:867px 637px;
   background-repeat: no-repeat;
   height: 890px;
   background-color: #f2f2f2;
