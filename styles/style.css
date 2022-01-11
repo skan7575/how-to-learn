@@ -293,12 +293,10 @@
 .footer__column-links {
   display: flex;
   flex-direction: column;
-}
-.footer__column-link:last-of-type {
-  margin-bottom: 18px;
-}
-.footer__column-link:first-of-type {
+  text-decoration: none;
+  list-style-type: none;
   margin-top: 20px;
+  margin-bottom: 16px;
 }
 .footer__social-icon {
   margin-right: 10px;
