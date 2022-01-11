@@ -283,17 +283,21 @@
   font-weight: normal;
   color: white;
 }
-.footer__column-links {
+.footer__column-link {
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
   text-decoration: none;
   color: white;
 }
-.footer__column-links:last-of-type {
+.footer__column-links {
+  display: flex;
+  flex-direction: column;
+}
+.footer__column-link:last-of-type {
   margin-bottom: 18px;
 }
-.footer__column-links:first-of-type {
+.footer__column-link:first-of-type {
   margin-top: 20px;
 }
 .footer__social-icon {
