@@ -1,7 +1,3 @@
-* {
-  padding: 0;
-  margin: 0;
-}
 .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
@@ -20,19 +16,26 @@
   background-color:  #f2f2f2;
   position: relative;
   z-index: 0;
+  margin: 0;
+  padding: 0;
   /* выше установили ограничения для секции */
+}
+.logo {
+  width: 183px;
+  z-index: 1;
 }
 .logo_place_header {
   position: absolute;
   top: 30px;
   left: 64px;
-  z-index: 5;
+  height: 32px;
+  width: 183px;
 }
 .logo_place_footer {
-  width: 183px;
   height: 35px;
 }
 .header__title {
+  margin: 0;
   display: flex;
   width: 730px;
   margin-left: 64px;
@@ -43,6 +46,7 @@
   font-size: 102px;
 }
 .header__subtitle {
+  margin: 0;
   position: absolute;
   width: 388px;
   left: 64px;
@@ -79,7 +83,12 @@
 }
 
 /* и элемента с модификатором вида ключ-значение */
+.table__cell {
+  width: 250px;
+  margin-top: 60px;
+}
 .table__cell_theme_dark {
+  padding: 0;
   width: 200px;
   color: white;
   margin-right: 0;
@@ -97,6 +106,7 @@
   width: 80%;
 }
 .two-columns__brief {
+  margin: 0;
   width: 175px;
   line-height: 1.2;
   font-size: 18px;
@@ -104,10 +114,10 @@
   color: #2f80ed;
 }
 .two-columns__paragraph {
+  margin: 0;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
-  min-width: 784px;
 }
 .two-columns__paragraph:not(:last-child){
   margin-bottom: 30px;
@@ -129,26 +139,31 @@
   justify-content: center;
 }
 .section-title {
+  margin: 0;
   text-align: center;
   line-height: 1.15;
   font-size: 60px;
   font-weight: bold;
   width: 60%;
   margin-bottom: 20px;
+  z-index: 1;
 }
 .section-title_theme_dark {
   color: white;
   padding-top: 90px;
 }
 .section-subtitle {
+  z-index: 1;
   text-align: center;
   width: 60%;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
+  margin: 0;
 }
 .section-subtitle_theme_dark {
   color: white;
+  margin: 0;
 }
 .table {
   width: 1100px;
@@ -156,27 +171,24 @@
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 .table_theme_dark {
-  margin-top: 20px;
   z-index: 1;
 }
 .table__heading {
+  margin: 0;
   line-height: 1.15;
   font-size: 24px;
   font-weight: bold;
-  margin-bottom: 20px;
 }
 .table__text {
+  margin: 0;
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
-}
-.table__cell {
-  width: 250px;
-  margin-top: 60px;
-}
-.table__text_space {
   margin-top: 20px;
 }
 /*feynman*/
@@ -189,11 +201,12 @@
   background-position: left bottom;
   background-size:867px 637px;
   background-repeat: no-repeat;
-  height: 890px;
+  min-height: 890px;
   background-color: #f2f2f2;
   margin-top: 100px;
 }
 .feynman__title {
+  margin: 0;
   display: flex;
   justify-content: center;
   width: 648px;
@@ -204,6 +217,7 @@
   padding-top: 100px;
 }
 .feynman__subtitle {
+  margin: 0;
   margin-top: 70px;
   line-height: 51px;
   font-size: 36px;
@@ -247,6 +261,7 @@
   background-color: #1f1f1f;
   display: flex;
   justify-content: center;
+  box-sizing: border-box;
 }
 .footer__columns {
   display: flex;
@@ -254,14 +269,17 @@
   justify-content: space-between;
   width: 90%;
 }
-.footer__columns_content_copyright {
-  display: flex;
+.footer__column {
+  width: auto;
+}
+.footer__column_content_copyright {
   flex-direction: column;
   justify-content: space-between;
-  min-height: 350px;
   flex-basis: 711px;
+  display: flex;
 }
 .footer__author {
+  margin: 0;
   margin-top: 18px;
   margin-bottom: 18px;
   line-height: 25px;
@@ -269,18 +287,17 @@
   font-weight: normal;
   color: white;
 }
-.footer__columns_content_info {
-  display: flex;
+.footer__column_content_info {
   flex-direction: column;
 }
-.footer__columns_content_social {
-  display: flex;
+.footer__column_content_social {
   flex-direction: column;
 }
 .footer__column-heading {
+  margin: 0;
   line-height: 30px;
   font-size: 18px;
-  font-weight: normal;
+  font-weight: bold;
   color: white;
 }
 .footer__column-link {
@@ -291,12 +308,14 @@
   color: white;
 }
 .footer__column-links {
+  margin: 0;
   display: flex;
   flex-direction: column;
   text-decoration: none;
   list-style-type: none;
   margin-top: 20px;
   margin-bottom: 16px;
+  padding: 0;
 }
 .footer__social-icon {
   margin-right: 10px;
